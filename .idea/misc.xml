@@ -1,0 +1,45 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Zuway v2.3/ZuWay/app/src/main/res/layout/activity_home.xml" value="0.13196555217831812" />
+        <entry key="..\:/Zuway v2.3/ZuWay/app/src/main/res/layout/activity_item.xml" value="0.14764492753623187" />
+        <entry key="..\:/Zuway v2.3/ZuWay/app/src/main/res/layout/activity_item1.xml" value="0.14764492753623187" />
+        <entry key="..\:/Zuway v2.3/ZuWay/app/src/main/res/layout/activity_item_list.xml" value="0.2713541666666667" />
+        <entry key="..\:/Zuway v2.3/ZuWay/app/src/main/res/layout/activity_item_list2.xml" value="0.2713541666666667" />
+        <entry key="..\:/Zuway v2.3/ZuWay/app/src/main/res/layout/activity_main.xml" value="0.2713541666666667" />
+        <entry key="..\:/Zuway v2.3/ZuWay/app/src/main/res/layout/activity_main_search.xml" value="0.2713541666666667" />
+        <entry key="..\:/Zuway v2.3/ZuWay/app/src/main/res/layout/activity_my_cart.xml" value="0.14764492753623187" />
+        <entry key="..\:/Zuway v2.3/ZuWay/app/src/main/res/layout/activity_my_order.xml" value="0.13196555217831812" />
+        <entry key="..\:/Zuway v2.3/ZuWay/app/src/main/res/layout/activity_my_order_details.xml" value="0.11778115501519756" />
+        <entry key="..\:/Zuway v2.3/ZuWay/app/src/main/res/layout/activity_order_placed.xml" value="0.2713541666666667" />
+        <entry key="..\:/Zuway v2.3/ZuWay/app/src/main/res/layout/activity_otp.xml" value="0.2713541666666667" />
+        <entry key="..\:/Zuway v2.3/ZuWay/app/src/main/res/layout/activity_start.xml" value="0.13196555217831812" />
+        <entry key="..\:/Zuway v2.3/ZuWay/app/src/main/res/layout/activity_women_category.xml" value="0.2713541666666667" />
+        <entry key="..\:/Zuway v2.3/ZuWay/app/src/main/res/layout/app_bar_main.xml" value="0.2713541666666667" />
+        <entry key="..\:/Zuway v2.3/ZuWay/app/src/main/res/layout/content_main.xml" value="0.161210111893908" />
+        <entry key="..\:/Zuway v2.3/ZuWay/app/src/main/res/layout/custom_row.xml" value="0.2713541666666667" />
+        <entry key="..\:/Zuway v2.3/ZuWay/app/src/main/res/layout/fragment_youtube.xml" value="0.2713541666666667" />
+        <entry key="..\:/Zuway v2.3/ZuWay/app/src/main/res/layout/item1_main.xml" value="0.18" />
+        <entry key="..\:/Zuway v2.3/ZuWay/app/src/main/res/layout/layout_activity2.xml" value="0.14764492753623187" />
+        <entry key="..\:/Zuway v2.3/ZuWay/app/src/main/res/layout/layout_activity_item.xml" value="0.2" />
+        <entry key="..\:/Zuway v2.3/ZuWay/app/src/main/res/layout/layout_activity_itemlist.xml" value="0.2713541666666667" />
+        <entry key="..\:/Zuway v2.3/ZuWay/app/src/main/res/layout/layout_activity_subcategory.xml" value="0.2713541666666667" />
+        <entry key="..\:/Zuway v2.3/ZuWay/app/src/main/res/layout/layout_cart.xml" value="0.2713541666666667" />
+        <entry key="..\:/Zuway v2.3/ZuWay/app/src/main/res/layout/layout_editqut.xml" value="0.2713541666666667" />
+        <entry key="..\:/Zuway v2.3/ZuWay/app/src/main/res/layout/layout_size.xml" value="0.2713541666666667" />
+        <entry key="..\:/Zuway v2.3/ZuWay/app/src/main/res/layout/layout_video.xml" value="0.2713541666666667" />
+        <entry key="..\:/Zuway v2.3/ZuWay/app/src/main/res/layout/mycart_item_layout.xml" value="0.33" />
+        <entry key="..\:/Zuway v2.3/ZuWay/app/src/main/res/layout/toolbar_search.xml" value="0.2713541666666667" />
+        <entry key="..\:/Zuway v2.3/ZuWay/app/src/main/res/layout/view_customm.xml" value="0.2713541666666667" />
+        <entry key="..\:/Zuway v2.3/ZuWay/app/src/main/res/menu/activity_main_drawer.xml" value="0.2713541666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="corretto-1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

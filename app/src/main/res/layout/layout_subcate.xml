@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/subcate_img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="5dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo_big" />
+
+    <TextView
+        android:id="@+id/subcate_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sarees"
+        android:maxLines="3"
+        android:lines="2"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/text"
+        android:fontFamily="@font/poppins"
+
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

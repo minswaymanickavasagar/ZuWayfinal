@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.UpdateAccountActivity">
+
+
+    <include layout="@layout/toolbar_back"/>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_my_account"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:visibility="gone"
+                android:layout_weight="1"
+                app:tabBackground="@color/white"
+                app:tabGravity="fill"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/appcolorgray"
+                app:tabIndicatorColor="@color/text">
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/tab_editpro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Edit Profile" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/tab_changepass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change Password" />
+
+            </com.google.android.material.tabs.TabLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/pfll"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@color/appcolorgray"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <View
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:visibility="gone"
+                android:background="@color/appcolorgray"/>
+
+
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray"/>
+
+        <LinearLayout
+            android:id="@+id/chll"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Change Password"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@color/appcolorgray"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <View
+                android:id="@+id/ll2"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:visibility="gone"
+                android:background="@color/appcolorgray"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+
+
+    <FrameLayout
+        android:id="@+id/llchpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".LoginActivity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/appcoloryellow" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/appcolorgray" />
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="15dp"
+                card_view:cardElevation="6"
+                card_view:cardMaxElevation="6"
+                card_view:cardUseCompatPadding="true"
+                card_view:contentPadding="5">
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/border_box"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp">
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="75dp"
+                                android:background="@drawable/border_trans"
+                                android:layout_margin="10dp"
+                                android:textColorHint="@color/gray"
+                                app:errorEnabled="true"
+                                app:passwordToggleTint="@color/appcolorgray"
+                                app:passwordToggleEnabled="true">
+                                <EditText
+                                    android:id="@+id/changef_old_passw"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Old Password "
+                                    android:inputType="textPassword"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/text"
+                                    android:background="@android:color/transparent"
+                                    android:textColorHint="@color/colorAccent"
+                                    />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="75dp"
+                                android:background="@drawable/border_trans"
+                                android:layout_margin="10dp"
+                                app:errorEnabled="true"
+                                android:textColorHint="@color/gray"
+                                app:passwordToggleTint="@color/appcolorgray"
+                                app:passwordToggleEnabled="true">
+                                <EditText
+                                    android:id="@+id/changef_new_passw"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="New Password "
+                                    android:inputType="textPassword"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/text"
+                                    android:background="@android:color/transparent"
+                                    android:textColorHint="@color/text"
+
+                                    />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="75dp"
+                                android:background="@drawable/border_trans"
+                                android:layout_margin="10dp"
+                                app:errorEnabled="true"
+                                app:passwordToggleEnabled="true"
+                                app:passwordToggleTint="@color/appcolorgray"
+                                android:textColorHint="@color/gray"
+                                >
+                                <EditText
+                                    android:id="@+id/changef_confirm_passw"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Confirm Password "
+                                    android:inputType="textPassword"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/text"
+                                    android:background="@android:color/transparent"
+
+                                    android:textColorHint="@color/gray"
+                                    />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                            <Button
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/change_butn"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/border_button"
+                                android:text="Update"
+                                android:textSize="16dp"
+                                android:layout_margin="20dp"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </ScrollView>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/llprofile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".LoginActivity">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/appcoloryellow" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/appcolorgray" />
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="15dp"
+                card_view:cardElevation="6"
+                card_view:cardMaxElevation="6"
+                card_view:cardUseCompatPadding="true"
+                card_view:contentPadding="5">
+
+                <LinearLayout
+                    android:id="@+id/layoutInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/border_box"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:orientation="vertical">
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:id="@+id/Improfile"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/personlogo" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/border_trans"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".6"
+                            android:text="Name" />
+
+                        <EditText
+                            android:id="@+id/et_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:hint="Name "
+                            android:inputType="text"
+                            android:textColor="@color/text"
+                            android:textColorHint="@color/gray"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/border_trans"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".6"
+                            android:text="Email" />
+
+                        <EditText
+                            android:id="@+id/et_email"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:hint="Email "
+                            android:inputType="text"
+                            android:text="info@zuway.in"
+                            android:textColor="@color/text"
+                            android:textColorHint="@color/gray"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/border_trans"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".6"
+                            android:text="Phone" />
+
+                        <EditText
+                            android:id="@+id/et_phone"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:hint="Phno "
+                            android:inputType="number"
+                            android:textColor="@color/text"
+                            android:textColorHint="@color/gray"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/border_trans"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".6"
+                            android:text="Address" />
+
+                        <EditText
+                            android:id="@+id/et_address"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:hint="Address "
+                            android:inputType="text"
+                            android:lines="5"
+                            android:maxLines="5"
+                            android:textColor="@color/text"
+                            android:textColorHint="@color/gray"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/getlocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="end"
+                        android:padding="10dp"
+                        android:text="Click For Location"
+                        android:textColor="@color/appcolorgray"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/setting_sumit_butn"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/border_button"
+                        android:text="Submit"
+                        android:textColor="@color/white"
+                        android:textSize="19dp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+ <!--   <include layout="@layout/fragment_changea_password"
+        android:id="@+id/llchpass"
+        android:visibility="gone"/>
+    <include layout="@layout/fragment_profile_update"
+        android:id="@+id/llprofile"/>-->
+
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="9"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tab_changepass">
+
+            </FrameLayout>
+
+    <ProgressBar
+        android:id="@+id/simpleProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+</LinearLayout>

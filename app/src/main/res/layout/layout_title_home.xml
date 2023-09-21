@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/ll_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <View
+            android:id="@+id/crazyline1"
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/lightgray" />
+
+        <TextView
+            android:id="@+id/home_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Categories"
+            android:padding="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:textAlignment="center"
+            android:textColor="@color/appcolorgray"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/crazyline2"
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="25dp"
+            android:background="@color/lightgray" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"
+        android:background="@color/lightgray" />
+
+    <com.ZuWay.model.ExpandableHeightGridView
+        android:id="@+id/home_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:columnWidth="110dp"
+        android:gravity="center"
+        android:nestedScrollingEnabled="false"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:verticalSpacing="3dp"
+        tools:listitem="@layout/layout_hotdeals_home" />
+
+    <TextView
+        android:id="@+id/home_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"
+        android:drawablePadding="5dp"
+        android:gravity="end"
+        android:text="View More"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins"
+        />
+
+
+<!--
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/lightgray" />
+-->
+
+
+</LinearLayout>

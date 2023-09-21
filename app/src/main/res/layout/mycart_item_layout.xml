@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/cv_mccard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    app:cardCornerRadius="2dp"
+    app:cardUseCompatPadding="true"
+    card_view:cardElevation="@dimen/margin_10dp"
+    card_view:cardMaxElevation="@dimen/margin_10dp"
+    card_view:contentPadding="@dimen/margin_10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/mc_product_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:resizeMode="horizontal|vertical"
+                    android:src="@drawable/logo_big" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/decrease"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_button"
+                        android:gravity="center"
+                        android:onClick="decreaseInteger"
+                        android:text="-"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="30dp" />
+
+                    <TextView
+                        android:id="@+id/integer_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/increase"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:onClick="increaseInteger"
+                        android:text="+"
+                        android:textAlignment="center"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/llay_cart"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/button_oval_accent_radius"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tv_minus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_oval_primary_radius_left"
+                            android:gravity="center"
+                            android:textSize="22dp"
+                            android:padding="3dp"
+                            android:text="-"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/tv_qty"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_oval_accent"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textAlignment="center"
+                            android:textColor="@color/green"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_add"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:padding="8dp"
+                            android:text="ADD"
+                            android:textAlignment="center"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+
+                        <TextView
+                            android:id="@+id/tv_plus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_oval_primary_radius_right"
+                            android:gravity="center"
+                            android:textSize="22dp"
+                            android:text="+"
+                            android:padding="3dp"
+
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                  <!--  <LinearLayout
+                        android:id="@+id/qutity_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+-->
+
+                        <ImageButton
+                            android:id="@+id/qutity_edit"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:padding="10dp"
+                            android:visibility="gone"
+                            android:background="@color/white"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_edit_black_24dp" />
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llay_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/mc_product_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:text="Voonik Georgette Saree"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/text"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:singleLine="true"
+                        android:fontFamily="@font/poppins"
+                        />
+
+
+                    <ImageView
+                        android:id="@+id/mc_product_delet"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight=".5"
+                        android:src="@drawable/ic_delete_black_24dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/mc_product_dis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Voonik Georgette Saree For Women Party Wear"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/darkgray"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:fontFamily="@font/poppins"
+                    android:layout_marginStart="5dp"
+
+                    />
+
+                <LinearLayout
+                    android:id="@+id/llay_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/sizee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Size   :"
+                        android:textColor="@color/text"
+                        android:fontFamily="@font/poppins"
+                        />
+
+                    <TextView
+                        android:id="@+id/mc_product_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:lines="1"
+                        android:textAlignment="center"
+                        android:textColor="@color/appcolorgray"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/poppins"
+                        />
+
+                    <TextView
+                        android:id="@+id/slash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text=" / "
+                        android:fontFamily="@font/poppins"
+
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/colorr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Color   :"
+                        android:textColor="@color/text"
+                        android:fontFamily="@font/poppins"
+                        />
+
+                    <TextView
+                        android:id="@+id/mc_product_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_margin="5dp"
+                        android:lines="1"
+                        android:textAlignment="center"
+                        android:textColor="@color/appcolorgray"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/poppins"
+                        />
+
+                </LinearLayout>
+
+ <LinearLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     android:layout_marginStart="5dp">
+     <TextView
+         android:id="@+id/qty"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="@color/text"
+         android:text="0"
+         android:textSize="16dp"
+         android:textStyle="bold"
+         android:fontFamily="@font/poppins"
+         />
+ </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/webname"
+                    android:layout_marginStart="2dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" ₹  "
+                        android:textColor="@color/appcolordarkyellow"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/mc_product_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/webname"
+                        android:text="499"
+                        android:textColor="@color/text"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/poppins"
+                        />
+
+                    <TextView
+                        android:id="@+id/mc_product_priceorgi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:foreground="@drawable/strike_through"
+                        android:text="Rs 1245"
+                        android:textColor="@color/gray"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:fontFamily="@font/poppins"
+                        />
+
+                    <TextView
+                        android:id="@+id/mc_product_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="(Save60%)"
+                        android:textColor="@color/green"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:fontFamily="@font/poppins"
+                        />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/mc_product_stock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="In Stock"
+                    android:textColor="@color/green"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:fontFamily="@font/poppins"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/mc_product_deliver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Deliver Charge"
+                        android:textColor="@color/text"
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/poppins"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text=" | "
+                        android:textColor="@color/gray"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/poppins"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/mc_product_delich"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Free"
+                        android:textColor="@color/appcolorgray"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/poppins"
+                        />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#263646</color>
+    <color name="colorPrimaryDark">#263646</color>
+    <color name="colorAccent">#263646</color>
+    <color name="colorAccentDark">#263646</color>
+    <color name="darkgray">#9f000000</color>
+    <color name="gray">#72000000</color>
+    <color name="lightgray">#32000000</color>
+    <color name="text">#c6000000</color>
+    <color name="black">#F8000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="appcoloryellow">#fefadd </color>
+    <color name="appcolorgray">#263646 </color>
+    <color name="appcolorlightgray">#9a9a9a </color>
+    <color name="appcoloranotherlightgray">#b4b4b3 </color>
+    <color name="appcolordarkyellow">#E874670A</color>
+    <color name="status">#263646 </color>E8DFC71E
+    <color name="green">#1C6D20</color>
+    <color name="hintColor">#2FFFD700</color>
+    <color name="BlackTrans">#48000000</color>
+    <color name="buttoncolor">#9EFD325B</color>
+    <color name="colorWhite">#fff</color>
+    <color name="colorWhiteDull">#63CFCFCF</color>
+    <color name="colorblack">#000000</color>
+    <color name="colorWhiteTrans">#10ffffff</color>
+    <color name="grayy">#2FFFFFFF</color>
+
+    <color name="colorBlackTrans">#10000000</color>
+    <color name="textColor">#AD000000</color>
+    <color name="colorGreen">#1aa160</color>
+    <color name="button2">#459690</color>
+    <color name="gold">#E7C359</color>
+    <color name="skyblue">#222A53</color>
+    <color name="red">#ff0000</color>
+    <color name="blue">#0048b4</color>
+
+    <color name="darkblue">#103265</color>
+    <color name="brown">#CE482927</color>
+    <color name="color_bg">#80000000</color>
+
+</resources>

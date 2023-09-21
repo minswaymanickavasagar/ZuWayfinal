@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+  <!--  <item android:drawable="@drawable/progress_sm_w01" android:duration="50" />
+    <item android:drawable="@drawable/progress_sm_w02" android:duration="50" />
+    <item android:drawable="@drawable/progress_sm_w03" android:duration="50" />
+    <item android:drawable="@drawable/progress_sm_w04" android:duration="50" />
+    <item android:drawable="@drawable/progress_sm_w05" android:duration="50" />
+    <item android:drawable="@drawable/progress_sm_w06" android:duration="50" />
+    <item android:drawable="@drawable/progress_sm_w07" android:duration="50" />
+    <item android:drawable="@drawable/progress_sm_w08" android:duration="50" />
+    <item android:drawable="@drawable/progress_sm_w09" android:duration="50" />
+    <item android:drawable="@drawable/progress_sm_w10" android:duration="50" />
+    <item android:drawable="@drawable/progress_sm_w11" android:duration="50" />
+    <item android:drawable="@drawable/progress_sm_w12" android:duration="50" />
+-->
+</set>

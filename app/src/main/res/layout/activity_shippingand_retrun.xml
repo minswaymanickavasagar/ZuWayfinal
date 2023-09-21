@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ShippingandRetrun">
+
+
+
+    <include layout="@layout/toolbar_back"/>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/delivery_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                android:textColor="@color/appcolorgray"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins"
+                />
+         <!--   <WebView
+                android:id="@+id/webView_sr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="5dp" />-->
+            <TextView
+                android:id="@+id/webView_sr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins"
+
+
+                />
+            <Button
+                android:id="@+id/returns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:layout_gravity="end"
+                android:text="Return Products"
+                android:background="@drawable/border_button"
+                android:layout_marginEnd="20dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:fontFamily="@font/poppins"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

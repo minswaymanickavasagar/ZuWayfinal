@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@drawable/border_trans"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:text="Feedback"
+                    android:textColor="@color/appcolorgray"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/separator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rateHeader"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/black" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:text="Please Rate Your Order  :"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins"
+                />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/customRatingBarr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:numStars="5"
+                android:fontFamily="@font/poppins"
+
+                android:progressTint="@color/gold"
+                android:stepSize="1.0" />
+
+
+            <TextView
+                android:id="@+id/ratingvalue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/appcolorgray"
+                android:visibility="gone"
+                android:fontFamily="@font/poppins"
+                />
+
+            <EditText
+                android:id="@+id/review"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@android:color/transparent"
+                android:hint="Write Your Review(200 Characters)"
+                android:lines="4"
+                android:textColor="@color/text"
+                android:textColorHint="@color/appcolorgray"
+                android:visibility="visible"
+                android:fontFamily="@font/poppins"
+                />
+
+
+            <Button
+                android:id="@+id/submitRateBtn"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="@drawable/border_button"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins"
+                />
+        </LinearLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>

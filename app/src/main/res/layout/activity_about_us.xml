@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AboutUs"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/toolbar_back"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/aboutus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About Us"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                android:textColor="@color/appcolordarkyellow"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/webView_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins"
+
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

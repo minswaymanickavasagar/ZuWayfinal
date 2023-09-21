@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SubCategoryActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/owl_lin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+            android:id="@+id/sub_lin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center">
+
+                <com.synnapps.carouselview.CarouselView
+                    android:id="@+id/customCarouselView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:disableAutoPlayOnUserInteraction="true"
+                    app:fillColor="#FFFFFFFF"
+                    app:pageColor="#00000000"
+                    app:radius="6dp"
+                    app:strokeColor="#FF777777"
+                    app:strokeWidth="0.5dp" />
+
+
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/pagercate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:visibility="gone"
+                    />
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/indicatorcate"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:visibility="gone"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <View
+                    android:id="@+id/scate1"
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/lightgray" />
+
+                <TextView
+                    android:id="@+id/scatetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Shop by Category"
+                    android:textAlignment="center"
+                    android:textColor="@color/appcolorgray"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins"
+                    />
+
+                <View
+                    android:id="@+id/scate2"
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/lightgray" />
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:card_view="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardUseCompatPadding="true"
+                card_view:cardElevation="@dimen/margin_10dp"
+                card_view:cardMaxElevation="@dimen/margin_10dp"
+                card_view:contentPadding="@dimen/margin_10dp">
+
+
+
+                <com.ZuWay.model.ExpandableHeightGridView
+                    android:id="@+id/subcate1_cate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:numColumns="4"
+                    tools:listitem="@layout/layout_subcate" />
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+         <!--   <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/subtitlelist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:listitem="@layout/layout_title_home" />
+
+                </LinearLayout>
+
+
+            <ProgressBar
+                android:id="@+id/simpleProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:progressDrawable="@drawable/logo_200"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"/>
+
+
+
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        >
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/rotaion"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

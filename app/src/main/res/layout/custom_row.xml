@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_search"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/pid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="id"
+        android:fontFamily="@font/poppins"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/pname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/poppins"
+        android:text=" name"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:id="@+id/pnamenk"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/poppins"
+        android:text=" name"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        />
+</LinearLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Zuway</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="logout_success">UserLogout</string>
+    <string name="alert_no">No</string>
+    <string name="alert_yes">Yes</string>
+    <string name="alert_want_logout">Are you want to Logout?</string>
+
+    <string name="alert_want_cancel">Are you sure to cancel this order?</string>
+    <string name="alert_want_cancell">Remove From Bag?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="error_no_yt_link">noo</string>
+    <string name="default_notification_channel_id">Notification</string>
+    <string name="fcm_message">New Notification From Zuway</string>
+</resources>

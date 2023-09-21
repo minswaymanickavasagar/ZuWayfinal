@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_login"
+    tools:context=".activity.SubCategoryActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/wish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BEST OFFER SALE..!YOUR ZUWAY...SHOP NOW.."
+                android:textColor="@color/blue"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:focusable="false"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="marquee"
+                android:fontFamily="@font/poppins"
+                android:marqueeRepeatLimit="marquee_forever"
+                />
+
+            <com.ZuWay.model.ExpandableHeightGridView
+                android:id="@+id/item_gridviewimage1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:columnWidth="110dp"
+                android:verticalSpacing="15dp"
+                android:horizontalSpacing="15dp"
+                android:gravity="center"
+                android:numColumns="2"
+                tools:listitem="@layout/layout_hotdeals_home" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:visibility="gone"
+                android:layout_gravity="center">
+
+                <com.synnapps.carouselview.CarouselView
+                    android:id="@+id/customCarouselView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:disableAutoPlayOnUserInteraction="true"
+                    app:fillColor="#FFFFFFFF"
+                    app:pageColor="#00000000"
+                    app:radius="6dp"
+                    app:strokeColor="#FF777777"
+                    app:strokeWidth="0.5dp" />
+
+
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/pagercate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:visibility="gone"
+                    />
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/indicatorcate"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:visibility="gone"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+
+
+<!--
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/subtitlelist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        tools:listitem="@layout/layout_title_home" />
+
+                </LinearLayout>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                >
+
+                <View
+                    android:id="@+id/scate1"
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/darkgray" />
+
+                <TextView
+                    android:id="@+id/scatetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Shop by Category"
+                    android:textAlignment="center"
+                    android:textColor="@color/darkblue"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins"
+                    />
+
+                <View
+                    android:id="@+id/scate2"
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/darkgray" />
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:card_view="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:visibility="gone"
+                app:cardCornerRadius="5dp"
+                app:cardUseCompatPadding="true"
+                card_view:cardElevation="@dimen/margin_10dp"
+                card_view:cardMaxElevation="@dimen/margin_10dp"
+                card_view:contentPadding="@dimen/margin_10dp">
+
+
+
+                <com.ZuWay.model.ExpandableHeightGridView
+                    android:id="@+id/subcate1_cate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:numColumns="4"
+                    tools:listitem="@layout/layout_subcate" />
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/lightgray" />
+
+
+            <!-- <LinearLayout
+                 android:id="@+id/subcate1"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical">
+
+
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="3dp"
+                     android:background="@color/lightgray" />
+
+                 <TextView
+                     android:id="@+id/subcate1_title"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_centerInParent="true"
+                     android:padding="10dp"
+                     android:text="Trendy Picks"
+                     android:textAlignment="textStart"
+                     android:textColor="@color/appcolorgray"
+                     android:textSize="20dp"
+                     android:textStyle="bold" />
+
+
+                 <RelativeLayout
+                     android:layout_width="370dp"
+                     android:layout_height="180dp"
+                     android:visibility="gone"
+
+                     android:layout_gravity="center"
+                     android:layout_margin="10dp">
+
+                     <com.synnapps.carouselview.CarouselView
+                         android:id="@+id/customCarouselView"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         app:disableAutoPlayOnUserInteraction="true"
+                         app:fillColor="#FFFFFFFF"
+                         app:pageColor="#00000000"
+                         app:radius="6dp"
+                         app:strokeColor="#FF777777"
+                         app:strokeWidth="0.5dp" />
+
+
+                     <androidx.viewpager.widget.ViewPager
+                         android:id="@+id/subcate1_pager"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentTop="true"
+                         android:layout_margin="5dp"
+                         android:visibility="gone"/>
+
+                     <me.relex.circleindicator.CircleIndicator
+                         android:id="@+id/subcate1_indicator"
+                         android:layout_width="match_parent"
+                         android:layout_height="48dp"
+                         android:visibility="gone"
+                         android:layout_alignParentBottom="true" />
+                 </RelativeLayout>
+
+
+
+                 <com.zuway.model.ExpandableHeightGridView
+                     android:id="@+id/subcate1_grid"
+                     android:layout_width="match_parent"
+                     android:layout_height="600dp"
+                     android:layout_marginStart="10dp"
+                     android:layout_marginTop="10dp"
+                     android:layout_marginBottom="10dp"
+                     android:columnWidth="110dp"
+                     android:gravity="center"
+                     android:numColumns="2"
+                     tools:listitem="@layout/layout_hotdeals_home" />
+
+
+             </LinearLayout>
+
+
+             <LinearLayout
+                 android:id="@+id/subcate2"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical">
+
+
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="3dp"
+                     android:background="@color/lightgray" />
+
+                 <TextView
+                     android:id="@+id/subcate2_title1"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_centerInParent="true"
+                     android:padding="10dp"
+                     android:text="Traditional Picks"
+                     android:textAlignment="textStart"
+                     android:textColor="@color/appcolorgray"
+                     android:textSize="20dp"
+                     android:textStyle="bold" />
+
+
+                 <RelativeLayout
+                     android:layout_width="370dp"
+                     android:visibility="gone"
+
+                     android:layout_height="180dp"
+                     android:layout_gravity="center"
+                     android:layout_margin="10dp">
+
+                     <androidx.viewpager.widget.ViewPager
+                         android:id="@+id/subcate2_pager"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentTop="true"
+                         android:layout_margin="5dp" />
+
+                     <me.relex.circleindicator.CircleIndicator
+                         android:id="@+id/subcate2_indicator"
+                         android:layout_width="match_parent"
+                         android:layout_height="48dp"
+                         android:layout_alignParentBottom="true" />
+                 </RelativeLayout>
+
+
+
+                 <com.zuway.model.ExpandableHeightGridView
+                     android:id="@+id/subcate2_grid"
+                     android:layout_width="match_parent"
+                     android:layout_height="600dp"
+                     android:layout_marginStart="10dp"
+                     android:layout_marginTop="10dp"
+                     android:layout_marginBottom="10dp"
+                     android:columnWidth="110dp"
+                     android:gravity="center"
+                     android:numColumns="2"
+                     tools:listitem="@layout/layout_hotdeals_home" />
+
+
+             </LinearLayout>
+
+
+
+
+             <LinearLayout
+                 android:id="@+id/subcate3"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical">
+
+
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="3dp"
+                     android:background="@color/lightgray" />
+
+                 <TextView
+                     android:id="@+id/subcate3_title"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_centerInParent="true"
+                     android:padding="10dp"
+                     android:text="Western deals"
+                     android:textAlignment="textStart"
+                     android:textColor="@color/appcolorgray"
+                     android:textSize="20dp"
+                     android:textStyle="bold" />
+
+
+                 <RelativeLayout
+                     android:layout_width="370dp"
+                     android:layout_height="180dp"
+                     android:visibility="gone"
+
+                     android:layout_gravity="center"
+                     android:layout_margin="10dp">
+
+                     <androidx.viewpager.widget.ViewPager
+                         android:id="@+id/subcate3_pager"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentTop="true"
+                         android:layout_margin="5dp" />
+
+                     <me.relex.circleindicator.CircleIndicator
+                         android:id="@+id/subcate3_indicator"
+                         android:layout_width="match_parent"
+                         android:layout_height="48dp"
+                         android:layout_alignParentBottom="true" />
+                 </RelativeLayout>
+
+
+
+                 <com.zuway.model.ExpandableHeightGridView
+                     android:id="@+id/subcate3_grid"
+                     android:layout_width="match_parent"
+                     android:layout_height="600dp"
+                     android:layout_marginStart="10dp"
+                     android:layout_marginTop="10dp"
+                     android:layout_marginBottom="10dp"
+                     android:columnWidth="110dp"
+                     android:gravity="center"
+                     android:numColumns="2"
+                     tools:listitem="@layout/layout_hotdeals_home" />
+
+
+             </LinearLayout>
+
+
+
+             <LinearLayout
+                 android:id="@+id/subcate4"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:visibility="gone"
+                 android:orientation="vertical">
+
+
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="3dp"
+                     android:background="@color/lightgray" />
+
+                 <TextView
+                     android:id="@+id/subcate4_title1"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_centerInParent="true"
+                     android:padding="10dp"
+                     android:text="InnerWare Deals"
+                     android:textAlignment="textStart"
+                     android:textColor="@color/appcolorgray"
+                     android:textSize="20dp"
+                     android:textStyle="bold" />
+
+
+                 <RelativeLayout
+                     android:layout_width="370dp"
+                     android:layout_height="180dp"
+                     android:layout_gravity="center"
+                     android:visibility="gone"
+
+                     android:layout_margin="10dp">
+
+                     <androidx.viewpager.widget.ViewPager
+                         android:id="@+id/subcate4_pager"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentTop="true"
+                         android:layout_margin="5dp" />
+
+                     <me.relex.circleindicator.CircleIndicator
+                         android:id="@+id/subcate4_indicator"
+                         android:layout_width="match_parent"
+                         android:layout_height="48dp"
+                         android:layout_alignParentBottom="true" />
+                 </RelativeLayout>
+
+
+
+                 <com.zuway.model.ExpandableHeightGridView
+                     android:id="@+id/subcate4_grid"
+                     android:layout_width="match_parent"
+                     android:layout_height="600dp"
+                     android:layout_marginStart="10dp"
+                     android:layout_marginTop="10dp"
+                     android:layout_marginBottom="10dp"
+                     android:columnWidth="110dp"
+                     android:gravity="center"
+                     android:numColumns="2"
+                     tools:listitem="@layout/layout_hotdeals_home" />
+
+
+             </LinearLayout>
+
+
+
+
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp">
+
+                 <View
+                     android:id="@+id/innerr1"
+                     android:layout_width="100dp"
+                     android:layout_height="1dp"
+                     android:layout_marginTop="15dp"
+                     android:background="@color/darkgray" />
+
+                 <TextView
+                     android:id="@+id/innerrtext"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_centerInParent="true"
+                     android:text="InnerWare Deals"
+                     android:textAlignment="center"
+                     android:textColor="@color/appcolorgray"
+                     android:textSize="18dp"
+                     android:textStyle="bold" />
+
+                 <View
+                     android:id="@+id/innerr2"
+                     android:layout_width="100dp"
+                     android:layout_height="1dp"
+                     android:layout_alignParentEnd="true"
+                     android:layout_marginTop="15dp"
+                     android:background="@color/darkgray" />
+             </RelativeLayout>
+
+             <ImageView
+                 android:layout_width="377dp"
+                 android:layout_height="180dp"
+                 android:layout_margin="10dp"
+                 android:scaleType="centerCrop"
+                 android:src="@drawable/innerwn" />
+
+             <ImageView
+                 android:layout_width="377dp"
+                 android:layout_height="180dp"
+                 android:layout_margin="10dp"
+                 android:scaleType="centerCrop"
+
+                 android:src="@drawable/bra_banner" />
+
+             <ImageView
+                 android:layout_width="377dp"
+                 android:layout_height="180dp"
+                 android:scaleType="centerCrop"
+
+                 android:layout_margin="10dp"
+                 android:src="@drawable/innewn" />
+        -->
+
+            <ProgressBar
+                android:id="@+id/simpleProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

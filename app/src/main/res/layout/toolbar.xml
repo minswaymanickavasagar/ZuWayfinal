@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_home"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:background="@color/appcolorgray"
+    android:elevation="4dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="40dp"
+            android:src="@drawable/logo_wh"/>
+
+
+        <TextView
+            android:id="@+id/toolbar_activity_title1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="ZUWAY"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins"
+
+            />
+
+        <ImageView
+            android:id="@+id/toolbar_profile"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_person"
+            />
+    </LinearLayout>
+</androidx.appcompat.widget.Toolbar>

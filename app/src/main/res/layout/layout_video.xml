@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtube_player_view1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:autoPlay="true"
+            app:showFullScreenButton="false"
+            app:showYouTubeButton="false"/>
+
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_close_black_24dp"
+        android:layout_gravity="end"/>
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/videosharee"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_oval_accent_radius_share"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:drawableEnd="@drawable/ic_share"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="share"
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

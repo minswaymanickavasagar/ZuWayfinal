@@ -1,0 +1,213 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.RegisterActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+               />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="@string/app_name"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:fontFamily="@font/poppins"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:src="@drawable/logo_tr"
+                app:civ_circle_background_color="@color/colorWhite" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:gravity="center_vertical"
+                android:text="Full Name "
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/txtname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/border_blue"
+                android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+                android:drawablePadding="5dp"
+                android:focusableInTouchMode="true"
+                android:hint="Enter your full name"
+                android:inputType="text"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:gravity="center_vertical"
+                android:text="Mobile Number"
+                android:fontFamily="@font/poppins"
+
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/txtMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/border_blue"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawablePadding="5dp"
+                android:focusableInTouchMode="true"
+                android:hint="Enter your mobile number"
+                android:inputType="number"
+                android:maxLength="13"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="Email Address"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/poppins"
+
+                />
+
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/border_blue"
+                android:drawableLeft="@drawable/ic_mail"
+                android:drawablePadding="5dp"
+                android:focusableInTouchMode="true"
+                android:hint="Enter your mobile number"
+                android:inputType="textMultiLine|textCapSentences"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:gravity="center_vertical"
+                android:text="Address"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/poppins"
+                />
+
+
+            <EditText
+                android:id="@+id/txtaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/border_blue"
+                android:drawableLeft="@drawable/ic_edit_location_black_24dp"
+                android:drawablePadding="5dp"
+                android:focusableInTouchMode="true"
+                android:hint="Enter your address"
+                android:inputType="textMultiLine|textCapSentences"
+                android:maxLength="350"
+                android:maxLines="3"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins"
+                />
+
+            <TextView
+                android:id="@+id/tv_currentlocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"
+                android:padding="10dp"
+                android:text="Get current location"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins"
+                />
+
+
+            <Button
+                android:id="@+id/update_btn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="30dp"
+                android:background="@drawable/border_button"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="By Signing In you are agreeing to Terms Of Use &amp; Privacy Policy of Top Groceries."
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

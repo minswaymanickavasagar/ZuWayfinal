@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "952218970919",
+    "project_id": "zuway-567d8",
+    "storage_bucket": "zuway-567d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952218970919:android:4550bcd94b5f4c6b3d1702",
+        "android_client_info": {
+          "package_name": "com.ZuWay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "952218970919-q4u1kjq73h4oj8as1d7r8du6pmcar9rj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqPsTKm1TeIusPVs7R1N53WzlvccT72Ws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "952218970919-q4u1kjq73h4oj8as1d7r8du6pmcar9rj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

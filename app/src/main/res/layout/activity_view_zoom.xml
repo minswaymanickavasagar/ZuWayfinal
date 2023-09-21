@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    &lt;!&ndash;<it.sephiroth.android.library.imagezoom.test.ImageViewOverlay&ndash;&gt;
+    &lt;!&ndash;android:padding="0dip"&ndash;&gt;
+    &lt;!&ndash;android:id="@+id/image"&ndash;&gt;
+    &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+    &lt;!&ndash;android:layout_height="0dp"&ndash;&gt;
+    &lt;!&ndash;android:layout_weight="1" />&ndash;&gt;
+
+    <it.sephiroth.android.library.imagezoom.ImageViewTouch
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <CheckBox
+            android:id="@+id/checkbox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Small image" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:layout_height="wrap_content"
+            android:text="Load Image" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:layout_height="wrap_content"
+            android:text="Change Display" />
+    </LinearLayout>
+
+</LinearLayout>-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".activity.ViewZoomActivity">
+
+    <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8" />
+
+    <RelativeLayout
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2">
+
+        <ImageView
+            android:id="@+id/previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:paddingBottom="18dp"
+            android:paddingTop="18dp"
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+        <TextView
+            android:id="@+id/note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/previous"
+            android:layout_toLeftOf="@id/next"
+            android:layout_toRightOf="@id/previous"
+            android:layout_toStartOf="@id/next"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+</LinearLayout>
